@@ -295,7 +295,7 @@ namespace ts.server {
             }
 
             this.statisticsHost = {
-                newLine: host.newLine,
+                newLine: "",
                 getMemoryUsage: maybeBind(host, host.getMemoryUsage),
                 write: s => this.writeLog(s),
                 system: host
